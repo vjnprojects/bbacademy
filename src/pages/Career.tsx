@@ -59,7 +59,7 @@ const Career = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/images/hired.jpg"
+        backgroundImage="/images/best.jpg"
         title="Career Opportunities"
         subtitle="Join our team or find your dream job in hospitality"
       />

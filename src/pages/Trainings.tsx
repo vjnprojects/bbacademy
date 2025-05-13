@@ -65,7 +65,7 @@ const Trainings = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/images/training.jpg"
+        backgroundImage="/images/training1.jpg"
         title="Our Training Programs"
         subtitle="Explore our world-class hospitality training programs"
       />

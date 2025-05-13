@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -9,9 +8,9 @@ const Contact = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/placeholder.svg"
+        backgroundImage="/images/classroom.jpg"
         title="Contact Us"
-        subtitle="Get in touch with our team"
+        subtitle="Get in touch with Beyond Barista Academy"
       />
 
       {/* Contact Information */}

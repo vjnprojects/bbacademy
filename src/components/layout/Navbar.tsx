@@ -23,6 +23,18 @@ const navigation = [
   { name: 'Meet Our Trainers', href: '/trainers' },
 ];
 
+const servicesMenu = [
+  { name: 'All Services & Gallery', href: '/services' },
+  { name: 'Barista Training', href: '/trainings#barista' },
+  { name: 'Bartending & Mixology', href: '/trainings#bartending' },
+  { name: 'Sommelier Course', href: '/trainings#sommelier' },
+  { name: 'Culinary Arts', href: '/culinary-arts' },
+  { name: 'Artificial Beauty', href: '/artificial-beauty' },
+  { name: 'Consultancy', href: '/consultancy' },
+  { name: 'Outside Catering', href: '/outside-catering' },
+  { name: 'Job Placement Assistance', href: '/career' },
+];
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -75,15 +87,42 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
-          {navigation.map((item) => (
-            <Link 
-              key={item.name} 
-              to={item.href}
-              className={`nav-link ${location.pathname === item.href ? 'active' : ''}`}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navigation.map((item) => {
+            if (item.name === 'Services & Gallery') {
+              return (
+                <div key={item.name} className="relative group">
+                  <button className={`nav-link ${location.pathname === item.href ? 'active' : ''} flex items-center gap-1 focus:outline-none`}>
+                    {item.name}
+                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </button>
+                  {/* Mega Menu Dropdown */}
+                  <div className="absolute left-0 mt-2 w-72 bg-white shadow-lg rounded-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-50 p-4 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto">
+                    <div className="grid grid-cols-1 gap-2">
+                      {servicesMenu.map((service) => (
+                        <Link
+                          key={service.name}
+                          to={service.href}
+                          className="block px-3 py-2 rounded-md text-bba-brown hover:bg-bba-cream/50 transition-colors"
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            } else {
+              return (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={`nav-link ${location.pathname === item.href ? 'active' : ''}`}
+                >
+                  {item.name}
+                </Link>
+              );
+            }
+          })}
           
           {/* Authentication */}
           {user ? (

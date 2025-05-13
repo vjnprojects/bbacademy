@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/images/classroom.jpg"
+        backgroundImage="/images/about.jpg"
         title="About Beyond Barista Academy"
         subtitle="Discover our story, mission, and commitment to excellence"
       />

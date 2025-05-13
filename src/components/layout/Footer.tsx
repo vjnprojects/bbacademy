@@ -76,8 +76,9 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-gray-300">
               <p className="mb-2">Kigali, Rwanda</p>
-              <p className="mb-2">Email: info@beyondbarista.rw</p>
-              <p className="mb-2">Phone: +250 798 123 456</p>
+              <p className="mb-2">Email: info.bba2025@gmail.com</p>
+              <p className="mb-2">Phone: +250 785 717 183</p>
+              <p className="mb-2">WhatsApp: +250 728 717 185</p>
             </address>
             <Link to="/contact" className="inline-block mt-2 text-bba-gold hover:underline">
               Get in Touch →

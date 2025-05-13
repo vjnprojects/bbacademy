@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -48,9 +47,9 @@ const Trainers = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/placeholder.svg"
+        backgroundImage="/images/hired.jpg"
         title="Meet Our Trainers"
-        subtitle="Learn from experienced professionals in the hospitality industry"
+        subtitle="Learn from the best in the industry"
       />
 
       {/* Trainers Section */}
