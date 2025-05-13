@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
 
@@ -97,6 +96,28 @@ const Footer = () => {
             <Link to="/terms" className="text-gray-400 hover:text-white transition-colors">
               Terms of Service
             </Link>
+          </div>
+        </div>
+
+        {/* Developer Portfolio & Socials */}
+        <div className="mt-6 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
+          <span className="text-gray-400">Website developed by <a href="https://www.linkedin.com/in/niyitegeka-bosco" target="_blank" rel="noopener noreferrer" className="text-bba-gold hover:underline">Niyitegeka Bosco</a></span>
+          <div className="flex space-x-3 mt-1 md:mt-0">
+            <a href="https://x.com/niyitegekabilly" target="_blank" rel="noopener noreferrer" className="text-white hover:text-bba-gold transition-colors" title="X (Twitter)">
+              <Twitter size={18} />
+            </a>
+            <a href="https://facebook.com/bosco.niyitegeka" target="_blank" rel="noopener noreferrer" className="text-white hover:text-bba-gold transition-colors" title="Facebook">
+              <Facebook size={18} />
+            </a>
+            <a href="https://instagram.com/niyitegeka_bosco" target="_blank" rel="noopener noreferrer" className="text-white hover:text-bba-gold transition-colors" title="Instagram">
+              <Instagram size={18} />
+            </a>
+            <a href="https://www.linkedin.com/in/niyitegeka-bosco" target="_blank" rel="noopener noreferrer" className="text-white hover:text-bba-gold transition-colors" title="LinkedIn">
+              <Linkedin size={18} />
+            </a>
+            <a href="https://www.tiktok.com/@Boss-ko" target="_blank" rel="noopener noreferrer" className="text-white hover:text-bba-gold transition-colors" title="TikTok">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.75 2.25h2.25a.75.75 0 0 1 .75.75v2.25a3.75 3.75 0 0 0 3.75 3.75h.75a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75h-1.5v5.25a6.75 6.75 0 1 1-6.75-6.75.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.75.75 3 3 0 1 0 3 3v-9a.75.75 0 0 1 .75-.75z"/></svg>
+            </a>
           </div>
         </div>
       </div>

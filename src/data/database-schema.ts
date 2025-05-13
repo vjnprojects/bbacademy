@@ -1,4 +1,3 @@
-
 /**
  * Beyond Barista Academy Database Schema
  * 
@@ -236,7 +235,7 @@ VALUES
 -- Insert website content
 INSERT INTO content (page, section, content_type, content)
 VALUES
-  ('home', 'hero_title', 'text', 'Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality School'),
+  ('home', 'hero_title', 'text', 'Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality Training Center'),
   ('home', 'hero_image', 'image_url', '/images/hero-image.jpg'),
   ('about', 'mission_statement', 'text', 'We train our people to always exceed company expectations.'),
   ('about', 'vision_statement', 'text', 'To proudly offer high-end, globally relevant skills in barista, bartender, and sommelier training.');

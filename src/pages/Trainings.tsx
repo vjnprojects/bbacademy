@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -23,7 +22,7 @@ const Trainings = () => {
         "Machine maintenance and troubleshooting",
         "Customer service excellence"
       ],
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/7981ff69-0031-402e-ab5b-99749dd9d27d.jpg"
+      image: "/images/barista.jpg"
     },
     {
       title: "Bartending & Mixology Program",
@@ -41,7 +40,7 @@ const Trainings = () => {
         "Customer interaction and upselling",
         "Responsible alcohol service"
       ],
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/031bec54-ad42-41bd-bab2-85880b04518c.jpg"
+      image: "/images/vodka.jpg"
     },
     {
       title: "Sommelier Certification Program",
@@ -59,16 +58,16 @@ const Trainings = () => {
         "Wine cellar management",
         "Building and managing wine lists"
       ],
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/00ef293b-ef61-46f1-a08b-cfb5ab41d7e6.jpg"
+      image: "/images/wine.jpg"
     }
   ];
 
   return (
     <Layout>
       <HeroSection
-        backgroundImage="https://thumbs-eu-west-1.myalbum.io/photo/1k0/44cb386c-5f5f-48f1-9f70-50f970667323.jpg"
-        title="Training Programs"
-        subtitle="Elevate your hospitality career with our specialized training"
+        backgroundImage="/images/training.jpg"
+        title="Our Training Programs"
+        subtitle="Explore our world-class hospitality training programs"
       />
 
       {/* Training Programs Section */}

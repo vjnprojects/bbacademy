@@ -1,4 +1,3 @@
-
 /**
  * Content Management Service
  * 
@@ -9,9 +8,9 @@
 // Default content as a fallback
 const defaultContent = {
   home: {
-    hero_title: "Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality School",
+    hero_title: "Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality Training Center",
     hero_subtitle: "Discover world-class hospitality training in the heart of Rwanda",
-    intro_text: "An iconic school in the heart of vibrant Kigali, the cleanest city in Africa...",
+    intro_text: "An iconic training center in the heart of vibrant Kigali, the cleanest city in Africa...",
   },
   about: {
     hero_title: "About Beyond Barista Academy",

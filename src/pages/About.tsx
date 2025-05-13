@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -7,7 +6,7 @@ const About = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/placeholder.svg"
+        backgroundImage="/images/classroom.jpg"
         title="About Beyond Barista Academy"
         subtitle="Discover our story, mission, and commitment to excellence"
       />

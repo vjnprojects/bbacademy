@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
@@ -12,8 +11,8 @@ const Index = () => {
     <Layout>
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="https://thumbs-eu-west-1.myalbum.io/photo/1k0/36ed3fd8-070e-4a5c-8e77-8aadbf042437.jpg"
-        title="Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality School"
+        backgroundImage="/images/herosection.jpg"
+        title="Welcome to Beyond Barista Academy – Kigali's Iconic Hospitality Training Center"
       >
         <Link to="/trainings" className="btn-primary mr-4">
           Explore Our Programs
@@ -28,7 +27,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg leading-relaxed mb-8">
-              An iconic school in the heart of vibrant Kigali, the cleanest city in Africa, stands as a landmark destination, seamlessly blending exquisite Rwandan hospitality in the nation of a thousand hills. Timeless allure, attentive service, and meticulously designed settings invite you to embark on an awe-inspiring retreat. Immerse yourself in signature courses that offer a mix of recreation and career-building studies, making your dream unforgettable.
+              An iconic training center in the heart of vibrant Kigali, the cleanest city in Africa, stands as a landmark destination, seamlessly blending exquisite Rwandan hospitality in the nation of a thousand hills. Timeless allure, attentive service, and meticulously designed settings invite you to embark on an awe-inspiring retreat. Immerse yourself in signature courses that offer a mix of recreation and career-building studies, making your dream unforgettable.
             </p>
             <p className="text-lg leading-relaxed">
               Beyond Barista Academy (BBA) is a high-end Hospitality Training Centre (HTC) offering world-class service with a mission to awaken careers. Our origin story stems from the Middle East to Kigali—a home where stories of love, ambition, and gracious hospitality unfold. We create bridges between job seekers and employers. This is your chance to thrive.
@@ -50,19 +49,19 @@ const Index = () => {
             <ServiceCard
               title="Barista Training"
               description="Master the art of coffee preparation with our comprehensive barista training program."
-              image="https://thumbs-eu-west-1.myalbum.io/photo/1k0/7981ff69-0031-402e-ab5b-99749dd9d27d.jpg"
+              image="/images/barista.jpg"
               link="/trainings"
             />
             <ServiceCard
               title="Bartending & Mixology"
               description="Learn the science and art of creating exceptional cocktails and mastering bar service."
-              image="https://thumbs-eu-west-1.myalbum.io/photo/1k0/031bec54-ad42-41bd-bab2-85880b04518c.jpg"
+              image="/images/vodka.jpg"
               link="/trainings"
             />
             <ServiceCard
               title="Sommelier Course"
               description="Develop your palate and knowledge of wines from around the world with our sommelier training."
-              image="https://thumbs-eu-west-1.myalbum.io/photo/1k0/00ef293b-ef61-46f1-a08b-cfb5ab41d7e6.jpg"
+              image="/images/wine.jpg"
               link="/trainings"
             />
           </div>

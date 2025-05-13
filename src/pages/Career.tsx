@@ -1,4 +1,3 @@
-
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -60,7 +59,7 @@ const Career = () => {
   return (
     <Layout>
       <HeroSection
-        backgroundImage="/placeholder.svg"
+        backgroundImage="/images/hired.jpg"
         title="Career Opportunities"
         subtitle="Join our team or find your dream job in hospitality"
       />

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, UserCircle, LogOut } from 'lucide-react';
@@ -70,6 +69,7 @@ const Navbar = () => {
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center">
+          <img src="/images/LOGO EGIDE new.png" alt="BBA Logo" className="h-10 w-10 mr-3 object-contain" />
           <span className="font-cormorant text-2xl font-bold text-bba-brown">Beyond Barista Academy</span>
         </Link>
 

@@ -1,82 +1,164 @@
-
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import HeroSection from '../components/ui/HeroSection';
 import SectionTitle from '../components/ui/SectionTitle';
+import placeholder from '/placeholder.svg';
 
 const Services = () => {
   // Services data
   const services = [
     {
-      title: "Barista Training",
-      description: "Master the art of coffee preparation with our comprehensive barista training program. Learn everything from bean selection to latte art in our state-of-the-art facilities.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/7981ff69-0031-402e-ab5b-99749dd9d27d.jpg",
-      features: [
-        "Coffee bean selection and roasting basics",
-        "Espresso machine operation and maintenance",
-        "Milk steaming and latte art techniques",
-        "Coffee flavor profiles and tasting",
-        "Customer service excellence"
+      group: 'Training Center (BBA TC)',
+      services: [
+        {
+          title: 'Barista Training',
+          description: 'Barista skills, latte arts, world of coffee, home barista, technical skills, brewing skills, sensory skills, roasting skills, tea making, smoothies and milkshake, cold & hot drinks preparation.',
+          image: '/images/barista.jpg',
+          features: [
+            'Barista skills',
+            'Latte arts',
+            'World of coffee',
+            'Home barista',
+            'Technical skills',
+            'Brewing skills',
+            'Sensory skills',
+            'Roasting skills',
+            'Tea making',
+            'Smoothies and milkshake',
+            'Cold & hot drinks preparation'
+          ]
+        },
+        {
+          title: 'Bartending & Mixology',
+          description: '101 bartending, master level, classic cocktail preparation, customer interaction and upselling, cross selling and suggestive selling, spirit categories, origins and production methods, modern mixology techniques, beer and mocktails services, responsible alcohol service and cigar services.',
+          image: '/images/vodka.jpg',
+          features: [
+            '101 bartending',
+            'Master level',
+            'Classic cocktail preparation',
+            'Customer interaction and upselling',
+            'Cross selling and suggestive selling',
+            'Spirit categories, origins and production methods',
+            'Modern mixology techniques',
+            'Beer and mocktails services',
+            'Responsible alcohol service',
+            'Cigar services'
+          ]
+        },
+        {
+          title: 'Sommelier (Oenology)',
+          description: 'Introduction to wine, 18 noble grape varieties, food and wine pairing principles, professional wine tasting techniques, major wine regions of the world, wine service etiquette.',
+          image: '/images/wine.jpg',
+          features: [
+            'Introduction to wine',
+            '18 noble grape varieties',
+            'Food and wine pairing principles',
+            'Professional wine tasting techniques',
+            'Major wine regions of the world',
+            'Wine service etiquette'
+          ]
+        },
+        {
+          title: 'Culinary Arts',
+          description: 'Pastry, bakery, hot and cold kitchen.',
+          image: '/images/caurse1.jpg',
+          features: [
+            'Pastry',
+            'Bakery',
+            'Hot kitchen',
+            'Cold kitchen'
+          ],
+          link: '/culinary-arts'
+        },
+        {
+          title: 'Artificial Beauty (Ubwiza Buhangano)',
+          description: 'Makeup, manicure and pedicure, waxing and massage.',
+          image: '/images/best.jpg',
+          features: [
+            'Makeup',
+            'Manicure and pedicure',
+            'Waxing',
+            'Massage'
+          ],
+          link: '/artificial-beauty'
+        },
+        {
+          title: 'Private Candidates Formation (NEPC)',
+          description: 'National Exams Private Candidate: Food and beverage operation, tourism, customs and taxes.',
+          image: '/images/certificate.jpg',
+          features: [
+            'Food and beverage operation',
+            'Tourism',
+            'Customs and taxes'
+          ]
+        },
+        {
+          title: 'Career Basic Trainings (CBT)',
+          description: 'House maids, home professionals (HP), all in one.',
+          image: '/images/classroom.jpg',
+          features: [
+            'House maids',
+            'Home professionals (HP)',
+            'All in one'
+          ]
+        }
       ]
     },
     {
-      title: "Bartending & Mixology",
-      description: "Learn the science and art of creating exceptional cocktails and mastering bar service. Our program covers classic and contemporary mixology techniques.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/031bec54-ad42-41bd-bab2-85880b04518c.jpg",
-      features: [
-        "Classic and contemporary cocktail recipes",
-        "Flair bartending techniques",
-        "Spirit knowledge and tasting",
-        "Bar setup and management",
-        "Customer interaction and upselling"
+      group: 'Bar On Job Training (BJT)',
+      services: [
+        {
+          title: 'Bar On Job Training',
+          description: 'On-the-job bar training for practical skills development.',
+          image: '/images/training1.jpg',
+          features: [
+            'Hands-on bar experience',
+            'Real-world scenarios',
+            'Skill assessment and feedback'
+          ]
+        }
       ]
     },
     {
-      title: "Sommelier Course",
-      description: "Develop your palate and knowledge of wines from around the world with our sommelier training. Become an expert in wine selection, pairing, and service.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/00ef293b-ef61-46f1-a08b-cfb5ab41d7e6.jpg",
-      features: [
-        "Wine regions and varietals",
-        "Wine tasting techniques",
-        "Food and wine pairing principles",
-        "Wine service and etiquette",
-        "Wine cellar management"
+      group: 'Beyond Job Connect (BJC)',
+      services: [
+        {
+          title: 'Beyond Job Connect',
+          description: 'Connecting graduates with job opportunities in hospitality.',
+          image: '/images/hired.jpg',
+          features: [
+            'Job placement',
+            'Career counseling',
+            'Networking events'
+          ]
+        }
       ]
     },
     {
-      title: "Real Simulation Environment",
-      description: "Practice your skills in our real-world simulation environments that replicate actual bars, coffee shops, and wine cellars. Learn by doing in realistic settings.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/44cb386c-5f5f-48f1-9f70-50f970667323.jpg",
-      features: [
-        "Fully equipped bar stations",
-        "Professional-grade espresso machines",
-        "Wine tasting room and cellar",
-        "POS system training",
-        "Customer interaction scenarios"
-      ]
-    },
-    {
-      title: "Certification",
-      description: "Receive internationally recognized certifications that will enhance your resume and career prospects in the hospitality industry worldwide.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/c48411f7-8bc3-4555-9c55-f1b06f9d2742.jpg",
-      features: [
-        "Internationally recognized credentials",
-        "Digital and physical certificates",
-        "Industry-endorsed qualifications",
-        "Portfolio development assistance",
-        "Continuing education options"
-      ]
-    },
-    {
-      title: "Job Placement Assistance",
-      description: "Benefit from our extensive network of hospitality partners and receive assistance in finding employment after completing your training program.",
-      image: "https://thumbs-eu-west-1.myalbum.io/photo/1k0/3592c17f-c89c-4991-9117-47193331fda1.jpg",
-      features: [
-        "Resume and cover letter workshops",
-        "Interview preparation",
-        "Industry networking events",
-        "Job referral opportunities",
-        "Career counseling sessions"
+      group: 'Other Services',
+      services: [
+        {
+          title: 'Outside Catering',
+          description: 'Outside catering for all events.',
+          image: '/images/training2.jpg',
+          features: [
+            'Event catering',
+            'Custom menus',
+            'Professional staff'
+          ],
+          link: '/outside-catering'
+        },
+        {
+          title: 'Consultancy',
+          description: 'On job training (JT) & drinks menu (beverage list) creation and designing.',
+          image: '/images/certificat.jpg',
+          features: [
+            'On job training (JT)',
+            'Drinks menu creation',
+            'Beverage list designing'
+          ],
+          link: '/consultancy'
+        }
       ]
     }
   ];
@@ -103,26 +185,38 @@ const Services = () => {
           />
           
           <div className="space-y-16">
-            {services.map((service, index) => (
-              <div key={index} className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-                <div className={`${index % 2 !== 0 ? 'md:order-2' : ''}`}>
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="rounded-lg w-full h-96 object-cover"
-                  />
-                </div>
-                <div className={`${index % 2 !== 0 ? 'md:order-1' : ''}`}>
-                  <h3 className="text-2xl font-semibold text-bba-brown mb-4">{service.title}</h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-bba-gold font-bold mr-2">•</span>
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+            {services.map((group, groupIdx) => (
+              <div key={groupIdx} className="mb-12">
+                <h2 className="text-3xl font-bold text-bba-brown mb-6">{group.group}</h2>
+                <div className="space-y-10">
+                  {group.services.map((service, idx) => (
+                    <div key={idx} className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                      <div className={`${idx % 2 !== 0 ? 'md:order-2' : ''}`}>
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="rounded-lg w-full h-96 object-cover"
+                        />
+                      </div>
+                      <div className={`${idx % 2 !== 0 ? 'md:order-1' : ''}`}>
+                        <h3 className="text-2xl font-semibold text-bba-brown mb-4">{service.title}</h3>
+                        <p className="text-gray-600 mb-6">{service.description}</p>
+                        <ul className="space-y-2 mb-4">
+                          {service.features.map((feature, i) => (
+                            <li key={i} className="flex items-start">
+                              <span className="text-bba-gold font-bold mr-2">•</span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        {service.link && (
+                          <Link to={service.link} className="btn-outline">
+                            Learn more
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +17,10 @@ import Trainers from "./pages/Trainers";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
+import CulinaryArts from './pages/CulinaryArts';
+import ArtificialBeauty from './pages/ArtificialBeauty';
+import Consultancy from './pages/Consultancy';
+import OutsideCatering from './pages/OutsideCatering';
 
 // Create custom CSS for editable mode
 const injectGlobalCSS = () => {
@@ -123,6 +126,10 @@ const App = () => {
               <Route path="/trainings" element={<Trainings />} />
               <Route path="/trainers" element={<Trainers />} />
               <Route path="/auth" element={<Auth />} />
+              <Route path="/culinary-arts" element={<CulinaryArts />} />
+              <Route path="/artificial-beauty" element={<ArtificialBeauty />} />
+              <Route path="/consultancy" element={<Consultancy />} />
+              <Route path="/outside-catering" element={<OutsideCatering />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
